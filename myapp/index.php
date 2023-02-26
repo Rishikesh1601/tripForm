@@ -2,7 +2,7 @@
 $insert = false;
 if(isset($_POST['name'])){
 //make three variables server,username and password
-$server = "localhost:3307";
+$server = "localhost";
 $username = "root";
 $password = "";
 
