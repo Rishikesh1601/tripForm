@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 80%;
+    /* background-color: rgb(193, 170, 170); */
+    padding: 34px;
+    margin: auto;
+}
+
+.container h1,p{
+    max-width: 80%;
+    /* background-color: grey; */
+    margin: auto;
+    /* padding: 23px; */
+    text-align: center;
+    font-family: cursive;
+}
+
+input,textarea {
+    /* display: block; */
+    width: 80%;
+    margin: 7px auto;
+    padding: 13px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: 2px solid black;
+    outline: null;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    margin: 10px auto;
+    padding: 12px 20px;
+    color: white;
+    background-color: purple;
+    border: 2px solid white;
+    border-radius: 34px;
+    outline: none;
+}
+
+
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.submitMSG{
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: roboto slab;
+    color: #039903;
+    font-size: 20px;
+    background-color: white;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+/* layout for small screens */
+@media only screen and (max-width: 600px){
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+    form {
+        background-color: beige;
+        width: auto;
+    }
+}
+
+/* layout for very large screens */
+@media only screen and(max-width: 400px){
+    *{
+        width:100%;
+    }
+}
